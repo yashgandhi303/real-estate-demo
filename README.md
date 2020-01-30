@@ -14,8 +14,8 @@ Example
 
 ```sh
 $ npm install
-$ node server.js
+$ npm run dev
 ```
 
-Then navigate to [http://localhost:7800](http://localhost:7800) and
+Then navigate to [http://localhost:8080](http://localhost:8080) and
 click on the button to see some reactive events in action.
