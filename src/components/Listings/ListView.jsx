@@ -5,6 +5,7 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 import Loader from '../../../assets/loader.gif';
+import LocationMaps from "../LocationMaps";
 
 
 const Liststyle = styled.div`
@@ -92,8 +93,8 @@ class ListView extends Component {
           {ready === 'loaded' && (
             <Fragment>
               <Listgroup>
-                <div className="viewleft">
-                  <img src={list.fields.icon[0].url} alt="listing items" />
+              <div className="viewleft">
+                      <LocationMaps />
                 </div>
                 <div className="viewright">
                   <h2>{list.fields.Tag}</h2>
