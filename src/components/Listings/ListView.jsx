@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import Loader from '../../../assets/loader.gif';
 import LocationMaps from "../LocationMaps";
 
-
 const Liststyle = styled.div`
   width:90%;
   padding-top:120px;
@@ -24,6 +23,8 @@ const Liststyle = styled.div`
   }
   .btn{
     text-align:center;
+    position: relative;
+    z-index: 99999;
   }
   input[type="button"] {
     height: 45px;
@@ -56,8 +57,6 @@ const Listgroup = styled.div`
     grid-gap:10px;
   }
 `;
-
-
 
 class ListView extends Component {
   constructor(props) {
@@ -93,7 +92,7 @@ class ListView extends Component {
           {ready === 'loaded' && (
             <Fragment>
               <Listgroup>
-              <div className="viewleft">
+                <div className="viewleft">
                       <LocationMaps />
                 </div>
                 <div className="viewright">
