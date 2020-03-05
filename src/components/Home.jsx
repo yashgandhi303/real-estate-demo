@@ -12,6 +12,7 @@ class Home extends Component {
     return (
       <div>
         <Header />
+
         <HomeSectionA />
         <HomeSectionB />
         <HomeSectionC />
